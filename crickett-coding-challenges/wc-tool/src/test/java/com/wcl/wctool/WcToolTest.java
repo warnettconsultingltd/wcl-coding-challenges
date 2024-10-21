@@ -13,7 +13,6 @@ public class WcToolTest {
         assertEquals("No parameters were provided", exception.getMessage());
     }
 
-
     @Test
     public void whenFileNotFound_thenExceptionThrown() {
         final var exception = assertThrows(InvalidParameterException.class, () -> WcTool.main("FakeFile.txt"));
