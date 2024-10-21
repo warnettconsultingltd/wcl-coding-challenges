@@ -28,7 +28,7 @@ The steps defined below are current as of 18th October 2024.
 
 ### Step One
 
-Status: In Progress
+Status: COMPLETED
 
 Findings and notes:
 * No mention of error handling is specified in the steps
@@ -51,6 +51,11 @@ Findings and notes:
   the main method merges concerns; there is parameter validation AND file processing.
 * Two additional classes have therefore been introduced to the solution; ParameterValidator and FileProcessor.
 * Yes, naming isn't my strong point!
+
+The solution to this step can be generated via "mvn clean install" maven build.  This produces in the target directory a
+jar file, wc-tool-0.1.jar, which can be invoked via java -jar.  This build process will run the tests on the project.
+
+The test.txt file can be manually downloaded as per challenge.
 
 ### Step Two
 
