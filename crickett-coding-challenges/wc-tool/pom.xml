@@ -6,10 +6,11 @@
     <parent>
         <groupId>com.wcl</groupId>
         <artifactId>crickett-coding-challenges</artifactId>
-        <version>0.1</version>
+        <version>0.0.1</version>
     </parent>
 
     <artifactId>wc-tool</artifactId>
+    <version>0.1</version>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
