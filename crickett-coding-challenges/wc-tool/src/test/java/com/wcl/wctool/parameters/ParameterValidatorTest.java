@@ -1,8 +1,6 @@
 package com.wcl.wctool.parameters;
 
-import com.wcl.wctool.WcTool;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.security.InvalidParameterException;
 
@@ -12,7 +10,7 @@ public class ParameterValidatorTest {
     private ParameterValidator parameterValidator;
 
     @BeforeEach
-    public void instantitateTestSubject() {
+    public void instantiateTestSubject() {
         parameterValidator = new ParameterValidator();
     }
 
