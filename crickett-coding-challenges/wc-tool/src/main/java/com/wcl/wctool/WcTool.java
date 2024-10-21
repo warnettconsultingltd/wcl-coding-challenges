@@ -2,7 +2,6 @@ package com.wcl.wctool;
 
 import com.wcl.wctool.file.FileProcessor;
 
-import java.io.File;
 import java.security.InvalidParameterException;
 
 public class WcTool {
