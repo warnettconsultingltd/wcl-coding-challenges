@@ -1,5 +1,7 @@
 package com.wcl.wctool;
 
+import com.wcl.wctool.file.FileProcessor;
+
 import java.io.File;
 import java.security.InvalidParameterException;
 
@@ -13,13 +15,9 @@ public class WcTool {
             throw new InvalidParameterException("The file name should be the only parameter");
         }
 
+
         final var fileName = args[0];
-
-        var file = new File(fileName);
-        if (!file.exists()) {
-            throw new InvalidParameterException(String.format("File '%s' does not exist", fileName));
-        }
-
-        System.out.println(file.length());
+        final var fileProcessor = new FileProcessor();
+        System.out.printf("Number of bytes %d%n",fileProcessor.numberOfBytes(fileName));
     }
 }
